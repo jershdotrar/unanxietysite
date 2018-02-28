@@ -1,5 +1,93 @@
-.head {
-    padding-left: 6em;
-    background-color: #6DB8BA;
-    height: 100vh;
+.landing {
+    background-color: #6eb9bb;
+
+    &__header {
+        position:           relative;
+        height:             134vh;
+        width:              100%;
+
+        &--layer-1 {
+            position:           absolute;
+            z-index:            1;
+            fill:             #2a313e;
+            left:               0;
+            top:                0;
+        }
+
+        &--layer-2 {
+            position:           absolute;
+            z-index:            1;
+            width:              100%;
+            fill:             #2a313e;
+            top:                40rem;
+        }
+
+        &--layer-3 {
+            position:           absolute;
+            z-index:            3;
+            width:              100%;
+            fill:             #edece6;
+            left:               0;
+            top:                0;    
+        }
+
+        &--greeting {
+            transform:          translateX(-50%);
+            position:           absolute;
+            z-index:            4;
+            width:              100%;
+            left:               50%;
+            
+            &-logo {
+                display:            block;
+                margin:             2rem auto;
+            }
+
+            &-name {
+                text-transform:     uppercase;
+                letter-spacing:     .3em;
+                text-align:         center;
+                font-size:          12rem;
+                color:              #2a313e;
+            }
+    
+            &-tagline {
+                text-transform:     uppercase;
+                font-weight:        200;
+                text-align:         center;
+                color:              #2a313e;
+            }
+        }
+    }
+}
+
+.nav {
+    position: absolute;
+    z-index: 4;
+    left: 74%;
+    top: 62.5rem;
+    text-align: right;
+
+    &-list {
+        list-style-type: none;
+
+    }
+
+    & a:hover,
+      a:focus {
+        transform: translateX(5rem);
+    }
+    // &__team {
+    //     padding-right: 2rem;
+    // }
+    
+    // &__features {
+    //     padding-right: 8rem;
+    // }
+
+    // &__download {
+    //     padding-right: 10rem;
+    // }
+
+    
 }
